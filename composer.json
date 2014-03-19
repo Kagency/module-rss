@@ -1,0 +1,9 @@
+{
+    "name":         "kagency/module-rss",
+    "description":  "RSS Event Source",
+    "autoload": {
+        "psr-0": {
+            "Kagency": "src/"
+        }
+    }
+}
