@@ -7,6 +7,7 @@ use Kagency\Kagent\User;
 use Kagency\Kagent\Versioned\Task;
 
 use Kagency\Module\RSS\Task\NewFeed as NewFeedTask;
+use Kagency\Module\RSS\EventSource\FeedConfiguration;
 
 class NewFeed extends Agent
 {
@@ -30,8 +31,15 @@ class NewFeed extends Agent
      */
     public function handle(User $user, Task $task)
     {
-        // @TODO: Find RSS link in website
-        // @TODO: Add new event source to user configuration
-        throw new \RuntimeException("@TODO: Implement");
+        $feedSet = \Zend\Feed\Reader\Reader::findFeedLinks($task->data);
+
+        foreach ($feedSet as $link) {
+            $user->eventSources[] = new FeedConfiguration(
+                array(
+                    'type' => $link['type'],
+                    'url' => $link['href'],
+                )
+            );
+        }
     }
 }
