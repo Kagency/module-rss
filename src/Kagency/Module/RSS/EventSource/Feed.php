@@ -1,11 +1,11 @@
 <?php
 
-namespace Kagency\Module\RSS;
+namespace Kagency\Module\RSS\EventSource;
 
-use Kagency\Kagent\EventSource as EventSourceBase;
+use Kagency\Kagent\EventSource;
 use Kagency\Kagent\EventSource\Configuration;
 
-class EventSource extends EventSourceBase
+class Feed extends EventSource
 {
     /**
      * Get new events

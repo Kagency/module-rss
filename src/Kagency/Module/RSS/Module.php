@@ -19,7 +19,7 @@ class Module extends ModuleBase
     public function getEventSources()
     {
         return array(
-            'rss' => new EventSource(),
+            'rss' => new EventSource\Feed(),
         );
     }
 
