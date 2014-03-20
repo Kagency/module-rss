@@ -7,6 +7,13 @@ use Kagency\Kagent\EventSource\Configuration;
 class FeedConfiguration extends Configuration
 {
     /**
+     * Name of corresponding event source. Must always be set.
+     *
+     * @var string
+     */
+    public $name = 'rss';
+
+    /**
      * Feed type
      *
      * @var string
