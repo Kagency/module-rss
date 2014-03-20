@@ -19,7 +19,19 @@ class Module extends ModuleBase
     public function getEventSources()
     {
         return array(
-            'rss' => new EventSource()
+            'rss' => new EventSource(),
+        );
+    }
+
+    /**
+     * Get agents
+     *
+     * @return Agent[]
+     */
+    public function getAgents()
+    {
+        return array(
+            new Agent\NewFeed(),
         );
     }
 }
