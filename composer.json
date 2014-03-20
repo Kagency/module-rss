@@ -8,6 +8,7 @@
     },
     "require":      {
         "zendframework/zend-feed": "@stable",
-        "zendframework/zend-http": "@stable"
+        "zendframework/zend-http": "@stable",
+        "zendframework/zend-servicemanager": "@stable"
     }
 }
