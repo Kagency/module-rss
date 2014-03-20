@@ -5,5 +5,8 @@
         "psr-0": {
             "Kagency": "src/"
         }
+    },
+    "require":      {
+        "zendframework/zend-feed": "@stable"
     }
 }
