@@ -10,5 +10,12 @@
         "zendframework/zend-feed": "@stable",
         "zendframework/zend-http": "@stable",
         "zendframework/zend-servicemanager": "@stable"
+    },
+    "require-dev": {
+        "pdepend/pdepend": "@stable",
+        "phpmd/phpmd": "@stable",
+        "phpunit/phpunit": "@stable",
+        "sebastian/phpcpd": "@stable",
+        "squizlabs/php_codesniffer": "@stable"
     }
 }
